@@ -1,0 +1,40 @@
+.review-container {
+  width: 55ch;
+  margin: 3rem auto;
+  color: #0d0d14;
+  background-color: var(--secondary-text);
+  border-radius: 3px;
+  padding: 2rem;
+  /* box-shadow: -.6rem -.6rem black; */
+  box-shadow: -12px 1px 23px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -12px 1px 23px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -12px 1px 23px 0px rgba(0, 0, 0, 0.5);
+}
+
+.review-container--image-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+}
+
+.review-container--image {
+  height: 400px;
+  display: inline-block;
+  /* width: 100%; */
+}
+
+.about h1 {
+  font-weight: normal;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.about p {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  width: 650px;
+}

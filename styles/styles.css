@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+
+/* 
+  INDEX
+  This file contains all the classes styling and root level variables
+  - Table of contents
+  
+    #1 Variables
+
+    #2 container
+
+    #3 Logo
+
+    #4 Navigation styles
+
+    #5 Hero section
+      #5.1 Hero section - Info
+        #5.1.1 Hero section - Info - button
+
+      #5.2 Hero section - Images
+
+    #6 Footer styles
+*/
+
+/* #1 variables */
+:root {
+  --primary-bg: #c40000;
+  --secondary-text: white;
+  --gold: #ffdc8a;
+  --primary-font: 18px;
+  --secondary-font: 22px;
+  --heading-font: 72px;
+}
+
+/* #2 container */
+.container {
+  max-width: 68.75rem;
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* #3 Logo */
+.logo {
+  font-size: 24px;
+  font-family: 'Zen Tokyo Zoo', cursive;
+}
+
+/* #4 Navigation styles */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.nav-list--item {
+  color: var(--secondary-text);
+  font-family: inherit;
+  text-decoration: none;
+  font-size: var(--primary-font);
+}
+
+.nav-list--item:hover,
+.nav-list--item:focus {
+  color: var(--gold);
+}
+
+.li-btn a {
+  text-decoration: none;
+  display: inline-block;
+  transform: translateY(-10px);
+}
+
+.li-btn a:focus {
+  color: var(--gold);
+  background-color: var(--primary-bg);
+  border: 2px solid var(--gold);
+}
+
+.li-btn:hover,
+.li-btn:focus {
+  transition: all .2s;
+}
+
+/* #5 Hero section */
+/* #5.1 Hero section - Info */
+.hero-about h1 {
+  font-weight: normal;
+  font-size: var(--heading-font);
+  line-height: 1;
+  width: 70%;
+}
+
+.hero-about h2 {
+  font-weight: normal;
+  font-size: var(--primary-font);
+  line-height: 1.8;
+  width: 80%;
+  transform: translateY(-30px);
+}
+
+/* #5.1.1 Hero section - Info - button */
+.btn-group {
+  transform: translateY(-10px);
+}
+
+.btn {
+  font-size: var(--primary-font);
+  border: none;
+  font-family: inherit;
+  margin-right: 2rem;
+  padding: .8rem 2.5rem;
+  background-color: var(--gold);
+  color: var(--primary-bg);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  outline: 2px solid white;
+  opacity: .8;
+  transition: all .2s;
+}
+
+.btn-rev {
+  background-color: var(--primary-bg);
+  color: var(--gold);
+  border: 2px solid var(--gold);
+} 
+
+.btn-round {
+  border-radius: 5px;
+  padding: .5rem 2.4rem;
+}
+
+/* #5.2 Hero section - Images */
+.hero-image img {
+  width: 300px;
+  transform: translateX(-60px);
+  margin-top: 2rem;
+}
+
+.thor {
+  height: 700px;
+  width: auto;
+  transform: translateY(-4rem);
+}
+
+.hero-image-sign img {
+  width: 550px;
+  transform: translateX(-60px);
+  margin-top: 2rem;
+}
+
+/* #6 Footer styles */
+
+.footer-item {
+  font-size: 16px;
+}
+
+.footer-item label {
+  display: inline-block;
+  transform: translateY(-10px);
+  font-size: inherit;
+}
+
+#mail-icon {
+  display: inline-block;
+  transform: translateY(3px);
+}
+
+#call-icon {
+  display: inline-block;
+  transform: translateX(6px);
+  transform: translate(8px, 4px);
+}

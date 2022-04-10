@@ -1,0 +1,53 @@
+.movies-container {
+  flex-direction: column;
+}
+
+.phase {
+  margin-top: 2rem;
+}
+
+.phase-one {
+  transform: translateY(-2rem);
+}
+
+.live-action {
+  margin-bottom: 5rem;
+}
+
+.phase h1 {
+  font-weight: normal;
+  font-family: inherit;
+  margin-bottom: 2rem;
+  font-size: var(--secondary-font);
+}
+
+.carousel {
+  height: 250px;
+  width: 160.32px;
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.carousel:hover,
+.carousel:focus {
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+.posters {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.image-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-parent a {
+  margin: .5rem auto;
+}

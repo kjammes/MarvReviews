@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarvReviews</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/tags.css" />
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <script defer src="./scripts/add-movies.js"></script>
+  </head>
+  <body style="background-color: hsl(0, 100, 38)">
+    <header class="container">
+      <div class="logo">MARVREVIEWS</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-list--item"> Home </a></li>
+          <li><a href="./movies.html" class="nav-list--item"> Movies </a></li>
+          <li>
+            <a href="./contact.html" class="nav-list--item"> Contact Us </a>
+          </li>
+          <li class="li-btn">
+            <a href="./sign-up.html" class="btn"> Sign Up </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container movies-container">
+      <section class="phase-one phase">
+        <h1>Marvel Cinematic Universe Phase One</h1>
+        <div class="posters" id="phase-one-posters">
+          <!-- Images will be added dynamically using javascript
+          with classname carousel -->
+        </div>
+      </section>
+
+      <section class="phase-two phase">
+        <h1>Marvel Cinematic Universe Phase Two</h1>
+        <div class="posters" id="phase-two-posters">
+          <!-- Images will be added dynamically using javascript -->
+          <!-- Hover over the images to see transform effect -->
+        </div>
+      </section>
+
+      <section class="phase-three phase">
+        <h1>Marvel Cinematic Universe Phase Three</h1>
+        <div class="posters" id="phase-three-posters">
+          <!-- Images will be added dynamically using javascript -->
+        </div>
+      </section>
+
+      <section class="live-action phase">
+        <h1>Marvel Live Action Series and Specials</h1>
+        <div class="posters" id="live-action-posters">
+          <!-- Images will be added dynamically using javascript -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="mail footer-item">
+        <img src="./assets/svgs/mail.svg" alt="mail icon" id="mail-icon" />
+        <label for="mail-icon" id="mail-label"
+          >marvreviews@marvreviews.com</label
+        >
+      </div>
+      <div class="call footer-item">
+        <img src="./assets/svgs/call.svg" alt="call icon" id="call-icon" />
+        <label for="call-icon" id="call-label"
+          >+22 49378 92837/+22 49378 92823</label
+        >
+      </div>
+      <div class="copyrights footer-item">
+        © 2010 - 2021 MarveReviews. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

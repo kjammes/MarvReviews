@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MarvReviews</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/tags.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body style="background-color: hsl(0, 100, 38)">
+    <header class="container">
+      <div class="logo">MARVREVIEWS</div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="./index.html" class="nav-list--item"> Home </a></li>
+          <li><a href="./movies.html" class="nav-list--item"> Movies </a></li>
+          <li>
+            <a href="./contact.html" class="nav-list--item"> Contact Us </a>
+          </li>
+          <li class="li-btn">
+            <a href="./sign-in.html" class="btn"> Sign In </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero-image-sign">
+        <img src="./assets/IM.webp" alt="Iron Man" />
+      </section>
+      <section class="form-container">
+        <form
+          action="./index.html"
+          onsubmit="return validatePasswords();"
+          method="GET"
+          id="form"
+        >
+          <div class="form-group">
+            <label for="name">Your Full Name :</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Full Name"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password :</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password :</label>
+            <input
+              type="password"
+              onblur="validatePasswords()"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+              autocomplete="off"
+            />
+          </div>
+          <button class="btn btn-round" type="submit">Sign Up</button>
+          Already a user?
+          <a href="./sign-in.html" style="color: white"> Sign In </a>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="mail footer-item">
+        <img
+          src="./assets/svgs/mail.svg"
+          alt="mail icon"
+          class="icon"
+          id="mail-icon"
+        />
+        <label for="mail-icon" id="mail-label"
+          >marvreviews@marvreviews.com</label
+        >
+      </div>
+      <div class="call footer-item">
+        <img
+          src="./assets/svgs/call.svg"
+          alt="call icon"
+          class="icon"
+          id="call-icon"
+        />
+        <label for="call-icon" id="call-label"
+          >+22 49378 92837/+22 49378 92823</label
+        >
+      </div>
+      <div class="copyrights footer-item">
+        © 2010 - 2021 MarveReviews. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="./scripts/validation.js"></script>
+  </body>
+</html>
